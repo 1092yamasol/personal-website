@@ -1,4 +1,4 @@
-.about__contianer {
+.about__container {
   grid-template-columns: 3fr 9fr;
   column-gap: 1.875rem;
 }
