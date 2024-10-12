@@ -1,11 +1,11 @@
 import React from "react";
 import "./sidebar.css";
-import Logo from "../../assets/logo2.png";
+import Logo from "../../assets/alantLogo.jpg";
 function Sidebar() {
   return (
     <aside className="aside">
       <a href="#home" className="nav__logo">
-        <img src={Logo} alt="" style={{ width: "100px", height: "100px" }} />
+        <img src={Logo} alt="" />
       </a>
       <nav className="nav">
         <div className="nav__menu">

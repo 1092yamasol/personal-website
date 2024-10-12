@@ -1,23 +1,24 @@
 import { title } from "framer-motion/client";
-import Work1 from "../../assets/luffy.jpg";
-import Work2 from "../../assets/Add.jpg";
+import Work1 from "../../assets/ais.jpg";
+import Work2 from "../../assets/QR based menu.jpg";
+
 const Menu = [
   {
     id: 1,
     image: Work1,
-    title: "Project Management Illustration",
+    title: "Asset Inspection System",
     category: "Design",
   },
   {
     id: 2,
-    image: Work1,
-    title: "Project Management Illustration",
+    image: Work2,
+    title: "QR Based Menu",
     category: "Design",
   },
   {
     id: 3,
-    image: Work1,
-    title: "Project Management Illustration",
+    image: Work2,
+    title: "Amharic Hand-writing Input Recognition",
     category: "Design",
   },
   {

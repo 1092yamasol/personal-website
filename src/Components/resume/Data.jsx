@@ -2,36 +2,26 @@ const Data = [
   {
     id: 1,
     category: "education",
-    icon: "icon-briefcase",
-    year: "2019-Present",
-    title: "Web Designer",
-    desc: "LOrem ipsum dolor sit amet quo ei simul congue eacae afjdai perfceto",
+    icon: "icon-graduation",
+    year: "2018-2023",
+    title: "Bachelor's Degree in Software Engineering",
+    desc: "Studied software engineering at Bahir Dar University.",
   },
   {
     id: 2,
     category: "experience",
     icon: "icon-briefcase",
-    year: "2019-Present",
-    title: "Web Designer",
-    desc: "LOrem ipsum dolor sit amet quo ei simul congue eacae afjdai perfceto",
+    title: "Intern",
+    desc: "Interned at the Ethiopian Artificial Intelligence Institute.",
   },
-
   {
     id: 3,
     category: "experience",
-    icon: "icon-briefcase",
-    year: "2019-Present",
+    icon: "icon-laptop",
+    year: "2023-2024",
     title: "Web Designer",
-    desc: "LOrem ipsum dolor sit amet quo ei simul congue eacae afjdai perfceto",
-  },
-
-  {
-    id: 4,
-    category: "experience",
-    icon: "icon-briefcase",
-    year: "2019-Present",
-    title: "Web Designer",
-    desc: "LOrem ipsum dolor sit amet quo ei simul congue eacae afjdai perfceto",
+    desc: "Worked at Hagbes PLC designing website systems for the company.",
   },
 ];
+
 export default Data;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import Me from "../../assets/luffy.jpg";
+import Me from "../../assets/antsh.jpg";
 import HeaderSocials from "./HeaderSocials";
 import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";
@@ -10,12 +10,12 @@ function Home() {
       <div className="intro">
         <img
           src={Me}
-          style={{ width: "100px", height: "100px", borderRadius: "50%" }}
+          style={{ width: "200px", height: "200px", borderRadius: "50%" }}
           alt=""
           className="home__img"
         />
         <h1 className="home__name"> Anteneh Wudneh</h1>
-        <span className="home__education">I'm a Front-End developer</span>
+        <span className="home__education">Full Stack Developer</span>
         <HeaderSocials />
         <a href="#contact" className="btn">
           Hire Me
