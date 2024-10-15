@@ -21,9 +21,10 @@
   display: flex;
   column-gap: 1.75rem;
   margin: 1.5rem 0;
+  justify-content: center;
 }
 
-.home__socail-link {
+.home__social-link {
   color: var(--title-color);
   font-size: 1.3rem;
   transition: 0.3s;

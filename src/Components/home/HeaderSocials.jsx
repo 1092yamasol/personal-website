@@ -4,7 +4,7 @@ function HeaderSocials() {
   return (
     <div className="home__socials">
       <a
-        href="https://www.instagram.com"
+        href="https://t.me/antsh_alant"
         className="home__social-link"
         target="_blank"
         rel="noopener noreferrer"
@@ -12,36 +12,12 @@ function HeaderSocials() {
         <i className="fa-brands fa-instagram"></i>
       </a>
       <a
-        href="https://twitter.com"
+        href="https://t.me/antsh_alant"
         className="home__social-link"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i className="fa-brands fa-twitter"></i>
-      </a>
-      <a
-        href="https://www.behance.net"
-        className="home__social-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fa-brands fa-behance"></i>
-      </a>
-      <a
-        href="https://dribbble.com"
-        className="home__social-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fa-brands fa-dribbble"></i>
-      </a>
-      <a
-        href="https://www.pinterest.com"
-        className="home__social-link"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i className="fa-brands fa-pinterest"></i>
+        <i className="fa-brands fa-telegram"></i>
       </a>
     </div>
   );

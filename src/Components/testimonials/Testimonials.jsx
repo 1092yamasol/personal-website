@@ -1,7 +1,9 @@
 import React from "react";
 import "./testimonials.css";
 import { title } from "framer-motion/client";
-import Image1 from "../../assets/luffy.jpg";
+import Image1 from "../../assets/dagi.jpg";
+import Image2 from "../../assets/mehbuba.jpg";
+import Image3 from "../../assets/sol.jpg";
 import { Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -12,28 +14,29 @@ const data = [
   {
     id: 1,
     image: Image1,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
+    title: "Dagem Adugna",
+    subtitle: "Former Acting head of Software Engineering at Hagbes",
     comment:
-      "I Enjoy working with the theme and learn so much. you guys make the process fun and intersting. Good luck! 👍",
+      "Working with you has always been a pleasure. Your dedication and ability to solve complex problems never cease to impress me. Keep up the amazing work! 👍",
   },
   {
     id: 2,
-    image: Image1,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
+    image: Image2,
+    title: "Mehbuba Abera",
+    subtitle: "Hagbes Acting head of Software Engineering",
     comment:
-      "I Enjoy working with the theme and learn so much. you guys make the process fun and intersting. Good luck! 👍",
+      "Your attention to detail and willingness to go the extra mile have made a huge impact on our projects. It's a privilege to collaborate with you. Keep shining! ✨",
   },
   {
     id: 3,
-    image: Image1,
-    title: "John Doe",
-    subtitle: "Product designer at Dribble",
+    image: Image3,
+    title: "Solomon Yeshiwas",
+    subtitle: "Senior Software Engineer",
     comment:
-      "I Enjoy working with the theme and learn so much. you guys make the process fun and intersting. Good luck! 👍",
+      "You bring a unique perspective and creativity to every task. Your contributions elevate the team and make every project a success. Proud to work alongside you! 🚀",
   },
 ];
+
 function Testimonials() {
   return (
     <section className="testimonials container section">
@@ -51,7 +54,7 @@ function Testimonials() {
           return (
             <SwiperSlide className="testimonials__item" key={id}>
               <div className="thumb">
-                <img src={image} alt="" />
+                <img src={image} alt="" style={{ borderRadius: "50px" }} />
               </div>
               <h3 className="testimonials__title">{title}</h3>
               <span className="subtitle">{subtitle}</span>

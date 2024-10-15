@@ -17,17 +17,17 @@ function Portfolio() {
         <span className="work__item" onClick={() => setItems(Menu)}>
           Everything
         </span>
-        <span className="work__item" onClick={() => filterItem("Creative")}>
-          Creative
+        <span className="work__item" onClick={() => filterItem("React")}>
+          React
         </span>
-        <span className="work__item" onClick={() => filterItem("Art")}>
-          Art
+        <span className="work__item" onClick={() => filterItem("PHP")}>
+          PHP
         </span>
-        <span className="work__item" onClick={() => filterItem("Design")}>
-          Design
+        <span className="work__item" onClick={() => filterItem("Laravel")}>
+          Laravel
         </span>
-        <span className="work__item" onClick={() => filterItem("Branding")}>
-          Branding
+        <span className="work__item" onClick={() => filterItem("AI")}>
+          AI
         </span>
       </div>
       <div className="work__container grid">

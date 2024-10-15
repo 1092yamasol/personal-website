@@ -11,6 +11,7 @@ const Data = [
     id: 2,
     category: "experience",
     icon: "icon-briefcase",
+    year: "2022",
     title: "Intern",
     desc: "Interned at the Ethiopian Artificial Intelligence Institute.",
   },

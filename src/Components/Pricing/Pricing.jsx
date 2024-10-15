@@ -1,6 +1,8 @@
 import React from "react";
 import "./pricing.css";
-import Image1 from "../../assets/luffy.jpg";
+import Image1 from "../../assets/basic.jpg";
+import Image2 from "../../assets/standard.jpg";
+import Image3 from "../../assets/premieum.jpg";
 
 function Pricing() {
   return (
@@ -24,7 +26,7 @@ function Pricing() {
         </div>
         <div className="pricing__item best">
           <span className="badge">Recommended</span>
-          <img src={Image1} alt="" className="pricing__img" />
+          <img src={Image2} alt="" className="pricing__img" />
           <h3 className="pricing__plan">premium</h3>
           <p className="pricing__title">
             {" "}
@@ -39,7 +41,7 @@ function Pricing() {
           </a>
         </div>
         <div className="pricing__item">
-          <img src={Image1} alt="" className="pricing__img" />
+          <img src={Image3} alt="" className="pricing__img" />
           <h3 className="pricing__plan">Ultimate</h3>
           <p className="pricing__title">
             {" "}
