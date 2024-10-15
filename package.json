@@ -15,12 +15,15 @@
     "swiper": "^11.1.14",
     "web-vitals": "^2.1.4"
   },
- "scripts": {
-  "start": "react-scripts start",
-  "build": "ESLINT_NO_DEV_ERRORS=true react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^4.3.0" // Add this line
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "ESLINT_NO_DEV_ERRORS=true react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
