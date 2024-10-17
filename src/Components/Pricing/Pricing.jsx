@@ -18,7 +18,7 @@ function Pricing() {
           </p>
           <p className="pricing__support">Email support</p>
           <h3 className="price">
-            <em>$</em> 9 <span>Month</span>
+            <em>$</em> 9 <span>Hour</span>
           </h3>
           <a href="#" className="btn">
             Get Started
@@ -34,7 +34,7 @@ function Pricing() {
           </p>
           <p className="pricing__support">Mon-Fri support</p>
           <h3 className="price">
-            <em>$</em> 15 <span>Month</span>
+            <em>$</em> 15 <span>Hour</span>
           </h3>
           <a href="#" className="btn">
             Get Started
@@ -49,7 +49,7 @@ function Pricing() {
           </p>
           <p className="pricing__support">24/7 support</p>
           <h3 className="price">
-            <em>$</em> 19 <span>Month</span>
+            <em>$</em> 19 <span>Hour</span>
           </h3>
           <a href="#" className="btn">
             Get Started

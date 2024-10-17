@@ -21,7 +21,7 @@ function About() {
               intuitive design drives me to create seamless user experiences and
               robust back-end architectures.
             </p>
-            <a href="" className="btn">
+            <a href="../../assets/Anteneh CV.pdf" className="btn" download>
               Download CV
             </a>
           </div>
