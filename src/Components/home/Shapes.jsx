@@ -26,7 +26,20 @@ function Shapes() {
           fillRule="evenodd"
         />
       </svg>
-
+      {/* Half Circle (not filled) */}
+      <svg
+        width="40"
+        height="20"
+        className="shape s3"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0,20 A20,20 0 0,1 40,20"
+          fill="none"
+          stroke="#FFC15E"
+          strokeWidth="2"
+        />
+      </svg>
       {/* Filled Square */}
       <svg
         width="28"

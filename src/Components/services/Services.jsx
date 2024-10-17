@@ -1,29 +1,37 @@
 import React from "react";
 import "./services.css";
-import Image1 from "../../assets/React.jpg";
-import Image3 from "../../assets/nodejs.jpg";
-import Image2 from "../../assets/uiux.jpg";
+import ImageReact from "../../assets/React.jpg";
+import ImageNode from "../../assets/nodejs.jpg";
+import ImageUIUX from "../../assets/uiux.jpg";
+import ImagePHP from "../../assets/php.jpg";
 const data = [
   {
     id: 1,
-    image: Image1,
+    image: ImageReact,
     title: "React Development",
     description:
-      "Build dynamic, responsive, and high-performing web applications with React, a modern JavaScript library. Specializing in creating seamless user experiences with efficient code, I can help you take your web project to the next level.",
+      "Build dynamic and high-performing web applications with React, specializing in seamless user experiences and efficient code.",
   },
   {
     id: 2,
-    image: Image3,
+    image: ImageNode,
     title: "Node.js Development",
     description:
-      "Harness the power of Node.js for building fast, scalable server-side applications. I specialize in creating real-time, data-intensive applications with an emphasis on efficiency and performance, helping you build reliable back-end systems for your projects.",
+      "Create fast, scalable server-side applications with Node.js, focusing on real-time data and efficient performance.",
   },
   {
     id: 3,
-    image: Image2,
+    image: ImagePHP,
+    title: "PHP",
+    description:
+      "Utilize PHP for server-side scripting to develop dynamic web applications and robust backend solutions.",
+  },
+  {
+    id: 4,
+    image: ImageUIUX,
     title: "UI/UX Design",
     description:
-      "Deliver intuitive and engaging user experiences through thoughtful UI/UX design. From wireframes to final prototypes, I create visually appealing and user-friendly designs that align with your brand and enhance customer satisfaction.",
+      "Create intuitive user experiences through thoughtful UI/UX design, from wireframes to prototypes, enhancing brand satisfaction.",
   },
 ];
 

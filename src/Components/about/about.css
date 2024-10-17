@@ -66,6 +66,10 @@
   width: 90%;
   background-color: rgb(108, 108, 299);
 }
+.php {
+  width: 80%;
+  background-color: rgb(174, 170, 233);
+}
 .about__img {
   width: 200px;
   height: 200px;

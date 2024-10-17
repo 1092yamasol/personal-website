@@ -6,7 +6,7 @@ import ScrollDown from "./ScrollDown";
 import Shapes from "./Shapes";
 function Home() {
   return (
-    <section className="home contianer" id="home">
+    <section className="home container" id="home">
       <div className="intro">
         <img
           src={Me}
@@ -20,6 +20,7 @@ function Home() {
         <a href="#contact" className="btn">
           Hire Me
         </a>
+
         <ScrollDown />
       </div>
       <Shapes />

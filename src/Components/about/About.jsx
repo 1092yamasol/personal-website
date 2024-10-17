@@ -21,7 +21,11 @@ function About() {
               intuitive design drives me to create seamless user experiences and
               robust back-end architectures.
             </p>
-            <a href="../../assets/Anteneh CV.pdf" className="btn" download>
+            <a
+              href="/Anteneh-CV.pdf"
+              className="btn"
+              download="Anteneh-Wudneh-CV.pdf"
+            >
               Download CV
             </a>
           </div>
@@ -43,6 +47,15 @@ function About() {
               </div>
               <div className="skills__bar ">
                 <span className="skills__percentage material__ui"></span>
+              </div>
+            </div>
+            <div className="skills__data">
+              <div className="skills__titles">
+                <h3 className="skills__name">PHP</h3>
+                <span className="skills__number">80%</span>
+              </div>
+              <div className="skills__bar ">
+                <span className="skills__percentage php"></span>
               </div>
             </div>
             <div className="skills__data">
