@@ -3,6 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
   margin-bottom: 2.5rem; /* Margin for spacing below the resume section */
+  width: 100%; /* Ensure it takes full width */
 }
 
 .timeline {
@@ -12,12 +13,14 @@
   position: relative;
   box-shadow: var(--shadow);
   overflow: hidden; /* Prevent overflow for better aesthetics */
+  width: 100%; /* Ensure it takes full width */
 }
 
 .timeline__item {
   position: relative;
   padding-left: 3.125rem;
   padding-bottom: 3.125rem;
+  width: 100%; /* Ensure it takes full width */
 }
 
 .timeline__item:last-child {
@@ -67,6 +70,7 @@
 
   .timeline__item {
     padding-left: 1.5rem; /* Adjust padding for smaller screens */
+    width: 100%; /* Ensure it takes full width */
   }
 }
 
