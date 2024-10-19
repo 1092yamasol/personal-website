@@ -46,7 +46,7 @@ function Contact() {
               placeholder="Write Your message"
             ></textarea>
           </div>
-          <button className="btn">Send Message</button>
+          <button className="btn__contact">Send Message</button>
         </form>
       </div>
     </section>

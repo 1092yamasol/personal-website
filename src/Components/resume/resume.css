@@ -91,4 +91,9 @@
   .timeline__date {
     font-size: var(--normal-font-size); /* Adjust date size for better readability */
   }
+  .resume__container {
+    display: grid; /* Ensure the container uses grid layout */
+    grid-template-columns: 3fr 9fr;
+    column-gap: 1.875rem;
+  }
 }

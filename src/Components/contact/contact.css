@@ -48,6 +48,18 @@
 .contact__form-area textarea {
   resize: none;
 }
+.btn__contact {
+  
+  padding: 0.75rem 2rem;
+  line-height: 1;
+  border-radius: 1.875rem;
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  border: 1px solid transparent;
+  color: #fff;
+  display: inline-block;
+  background-color: var(--first-color);
+  font-weight: var(--font-bold);
+}
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
@@ -72,8 +84,22 @@
   .contact__form-div {
     height: auto; /* Allow inputs to adjust height */
   }
-
+  .btn__contact {
+    margin-top: 15rem;
+    margin-right: 3rem;
+    padding: 0.75rem 2rem;
+    line-height: 1;
+    border-radius: 1.875rem;
+    box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+    border: 1px solid transparent;
+    color: #fff;
+    display: inline-block;
+    background-color: var(--first-color);
+    font-weight: var(--font-bold);
+  }
+  
   .contact__form-area textarea {
     height: auto; /* Allow textarea to adjust height */
   }
+  
 }
