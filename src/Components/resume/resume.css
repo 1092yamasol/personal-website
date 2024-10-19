@@ -83,6 +83,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .resume__container {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
   .timeline .icon-briefcase,
   .timeline .icon-graduation {
     font-size: var(--h3-font-size); /* Adjust icon size for smaller screens */
@@ -91,9 +94,5 @@
   .timeline__date {
     font-size: var(--normal-font-size); /* Adjust date size for better readability */
   }
-  .resume__container {
-    display: grid; /* Ensure the container uses grid layout */
-    grid-template-columns: 3fr 9fr;
-    column-gap: 1.875rem;
-  }
+ 
 }
