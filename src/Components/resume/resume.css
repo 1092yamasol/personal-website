@@ -57,17 +57,19 @@
 .timeline__title {
   font-size: var(--h3-font-size);
   margin: 0.5rem 0;
-  overflow-wrap: break-word; /* Allows long words to break onto the next line */
-  word-wrap: break-word; /* For older browsers */
-  white-space: normal; /* Ensure that the text wraps */
-  max-width: 90%; /* Prevents the text from stretching too wide */
+  overflow-wrap: break-word !important; 
+  word-wrap: break-word; 
+  word-break: break-all;
+  white-space: normal; 
+  max-width: 90%; 
 }
 
-.timeline__text { /* Assuming your description class is timeline__desc */
-  overflow-wrap: break-word; /* Allows long words to break */
-  word-wrap: break-word; /* For older browsers */
-  white-space: normal; /* Ensure text wraps */
-  max-width: 90%; /* Prevents text from stretching too wide */
+.timeline__text { 
+  overflow-wrap: break-word !important; 
+  word-wrap: break-word; 
+  white-space: normal; 
+  max-width: 90%; 
+  word-break: break-all;
 }
 
 /* Responsive Design */
@@ -84,7 +86,8 @@
 
 @media screen and (max-width: 768px) {
   .resume__container {
-    grid-template-columns: 1fr; /* Stack items on smaller screens */
+    grid-template-columns: 1fr;
+    width: 100%; /* Stack items on smaller screens */
   }
   .timeline .icon-briefcase,
   .timeline .icon-graduation {
@@ -94,5 +97,6 @@
   .timeline__date {
     font-size: var(--normal-font-size); /* Adjust date size for better readability */
   }
+  
  
 }
