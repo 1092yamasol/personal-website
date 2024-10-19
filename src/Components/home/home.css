@@ -24,10 +24,11 @@
 }
 
 .home__socials {
-  display: flex;
+  display: flex; /* Keep social links in a row */
   column-gap: 1.75rem;
   margin: 1.5rem 0;
   justify-content: center;
+  flex-wrap: wrap; /* Allow items to wrap to next line if they overflow */
 }
 
 .home__social-link {
@@ -161,9 +162,7 @@
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
   .home__name {
-    font-size: var(
-      --h2-font-size
-    ); /* Adjust the font size for medium screens */
+    font-size: var(--h2-font-size); /* Adjust the font size for medium screens */
   }
 
   .home__social-link {
@@ -186,13 +185,11 @@
   }
 
   .home__name {
-    font-size: var(
-      --h3-font-size
-    ); /* Further reduce font size for small screens */
+    font-size: var(--h3-font-size); /* Further reduce font size for small screens */
   }
 
   .home__socials {
-    flex-direction: column; /* Stack social links vertically */
-    row-gap: 1rem; /* Add space between stacked items */
+    /* Ensure social links stay horizontal on mobile */
+    row-gap: 0; /* Ensure no gap between rows, since we want them horizontal */
   }
 }

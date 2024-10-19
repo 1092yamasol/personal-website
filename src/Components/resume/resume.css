@@ -1,8 +1,8 @@
 .resume__container {
-  display: grid; /* Added to define the container as a grid */
+  display: grid; /* Define the container as a grid */
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
-  margin-bottom: 2.5rem; /* Added margin for spacing below the resume section */
+  margin-bottom: 2.5rem; /* Margin for spacing below the resume section */
 }
 
 .timeline {
@@ -43,7 +43,7 @@
   color: var(--first-color);
   background-color: var(--container-color);
   padding: 0.4375rem 0;
-  border-radius: 0.25rem; /* Added rounded corners to the icons for a smoother look */
+  border-radius: 0.25rem; /* Added rounded corners to the icons */
 }
 
 .timeline__date {
@@ -54,6 +54,9 @@
 .timeline__title {
   font-size: var(--h3-font-size);
   margin: 0.5rem 0;
+  overflow-wrap: break-word; /* Allows long words to break onto the next line */
+  word-wrap: break-word; /* For older browsers */
+  max-width: 90%; /* Prevents the text from stretching too wide */
 }
 
 /* Responsive Design */
@@ -74,8 +77,6 @@
   }
 
   .timeline__date {
-    font-size: var(
-      --normal-font-size
-    ); /* Adjust date size for better readability */
+    font-size: var(--normal-font-size); /* Adjust date size for better readability */
   }
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+
 function Contact() {
   return (
     <section className="contact container section" id="contact">
@@ -20,7 +21,6 @@ function Contact() {
                 placeholder="Insert your name"
               />
             </div>
-
             <div className="contact__form-div">
               <input
                 type="email"
