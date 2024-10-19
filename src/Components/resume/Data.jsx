@@ -5,7 +5,7 @@ const Data = [
     icon: "icon-graduation",
     year: "2018-2023",
     title: "Bachelor's Degree in Software Engineering",
-    desc: "Studied software engineering at BahirDar University.",
+    desc: "software engineering at BahirDar University.",
   },
   {
     id: 2,
