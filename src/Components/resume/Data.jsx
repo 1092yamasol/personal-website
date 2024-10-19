@@ -5,7 +5,7 @@ const Data = [
     icon: "icon-graduation",
     year: "2018-2023",
     title: "Bachelor's Degree in Software Engineering",
-    desc: "studied software engineering at BahirDar University.",
+    desc: "BahirDar University.",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const Data = [
     icon: "icon-briefcase",
     year: "2022",
     title: "Intern",
-    desc: "Interned at the Ethiopian Artificial Intelligence Institute.",
+    desc: "Ethiopian Artificial Intelligence Institute.",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const Data = [
     icon: "icon-laptop",
     year: "2023-2024",
     title: "Web Designer",
-    desc: "Worked at Hagbes PLC designing website systems for the company.",
+    desc: "Hagbes PLC",
   },
 ];
 
