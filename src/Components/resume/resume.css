@@ -1,22 +1,29 @@
 .resume__container {
+  display: grid; /* Added to define the container as a grid */
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
+  margin-bottom: 2.5rem; /* Added margin for spacing below the resume section */
 }
+
 .timeline {
   background-color: var(--container-color);
   padding: 1.875rem;
   border-radius: var(--border-radius);
   position: relative;
   box-shadow: var(--shadow);
+  overflow: hidden; /* Prevent overflow for better aesthetics */
 }
+
 .timeline__item {
   position: relative;
   padding-left: 3.125rem;
   padding-bottom: 3.125rem;
 }
+
 .timeline__item:last-child {
-  padding-bottom: 0;
+  padding-bottom: 0; /* Removes padding for the last item */
 }
+
 .timeline__item::before {
   content: "";
   width: 1px;
@@ -26,6 +33,7 @@
   left: 0.25rem;
   top: 0;
 }
+
 .timeline .icon-briefcase,
 .timeline .icon-graduation {
   position: absolute;
@@ -35,12 +43,39 @@
   color: var(--first-color);
   background-color: var(--container-color);
   padding: 0.4375rem 0;
+  border-radius: 0.25rem; /* Added rounded corners to the icons for a smoother look */
 }
+
 .timeline__date {
   color: #8b88b1;
   font-size: var(--small-font-size);
 }
+
 .timeline__title {
   font-size: var(--h3-font-size);
   margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .resume__container {
+    grid-template-columns: 1fr; /* Stack items on smaller screens */
+  }
+
+  .timeline__item {
+    padding-left: 1.5rem; /* Adjust padding for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .timeline .icon-briefcase,
+  .timeline .icon-graduation {
+    font-size: var(--h3-font-size); /* Adjust icon size for smaller screens */
+  }
+
+  .timeline__date {
+    font-size: var(
+      --normal-font-size
+    ); /* Adjust date size for better readability */
+  }
 }

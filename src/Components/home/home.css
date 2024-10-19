@@ -4,19 +4,25 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Stack elements vertically on smaller screens */
+  padding: 2rem; /* Add some padding for smaller screens */
 }
+
 .intro {
   max-width: 540px;
   text-align: center;
 }
+
 .home__img {
   margin-bottom: 1.5rem;
 }
+
 .home__name {
   font-size: var(--h1-font-size);
   font-weight: var(--font-bold);
   margin-bottom: 0.5rem;
 }
+
 .home__socials {
   display: flex;
   column-gap: 1.75rem;
@@ -29,18 +35,23 @@
   font-size: 1.3rem;
   transition: 0.3s;
 }
+
 .home__social-link:hover {
   color: hsl(43, 100%, 68%);
 }
+
 .scroll__down {
   position: absolute;
   bottom: 2.5rem;
   left: 0;
   width: 100%;
+  text-align: center; /* Center the scroll text */
 }
+
 .home__scroll-name {
   font-size: var(--small-font-size);
 }
+
 .mouse {
   border: 2px solid #454360;
   display: block;
@@ -51,6 +62,7 @@
   border-radius: 1rem;
   position: relative;
 }
+
 @keyframes ani-mouse {
   0% {
     top: 29%;
@@ -65,6 +77,7 @@
     top: 29%;
   }
 }
+
 .wheel {
   background-color: var(--title-color);
   border-radius: 100%;
@@ -76,59 +89,110 @@
   transform: translateX(-50%);
   animation: ani-mouse 2s linear infinite;
 }
+
 .shapes {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
-
   pointer-events: none;
 }
+
 .shape {
   position: absolute;
 }
+
 .s1 {
   left: 2%;
   top: 10%;
 }
+
 .s2 {
   left: 18%;
   top: 30%;
 }
+
 .s3 {
   left: 5%;
   top: 30%;
 }
+
 .s4 {
   left: 2%;
   top: 10%;
 }
+
 .s5 {
   left: 44%;
   top: 10%;
 }
+
 .s6 {
   left: 36%;
   bottom: 10%;
 }
+
 .s7 {
   left: 20%;
   right: 25%;
 }
+
 .s8 {
   right: 24%;
   bottom: 20%;
 }
+
 .s9 {
   right: 2%;
   top: 10%;
 }
+
 .s10 {
   top: 45%;
   right: 11%;
 }
+
 .s11 {
   bottom: 10%;
   right: 2%;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .home__name {
+    font-size: var(
+      --h2-font-size
+    ); /* Adjust the font size for medium screens */
+  }
+
+  .home__social-link {
+    font-size: 1.1rem; /* Reduce social link size for smaller screens */
+  }
+
+  .scroll__down {
+    bottom: 1.5rem; /* Adjust the position of the scroll down text */
+  }
+
+  .mouse {
+    height: 1.5rem; /* Adjust mouse height for smaller screens */
+    width: 1rem; /* Adjust mouse width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 1rem; /* Reduce padding for smaller screens */
+  }
+
+  .home__name {
+    font-size: var(
+      --h3-font-size
+    ); /* Further reduce font size for small screens */
+  }
+
+  .home__socials {
+    flex-direction: column; /* Stack social links vertically */
+    row-gap: 1rem; /* Add space between stacked items */
+  }
 }

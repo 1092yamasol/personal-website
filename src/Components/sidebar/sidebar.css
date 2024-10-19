@@ -4,13 +4,20 @@
   top: 0;
   background: var(--body-color);
   border-right: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 2.5rem;
+  padding: 2.5rem 1.5rem; /* Added horizontal padding for better spacing */
   width: 110px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   z-index: 10;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .aside {
+    width: 80px; /* Adjust sidebar width on smaller screens */
+  }
 }
 
 .nav__list {
@@ -23,18 +30,23 @@
   font-size: 1.5rem;
   color: var(--title-color);
   font-weight: var(--font-bold);
-  transition: 0.3s;
+  transition: color 0.3s; /* Specify property for clarity */
 }
+
 .nav__link:hover {
   color: hsl(43, 100%, 68%);
 }
+
 .copyright {
   color: hsl(245, 15%, 65%);
   font-size: var(--small-font-size);
   transform: rotate(-180deg);
   writing-mode: vertical-rl;
+  margin-top: auto; /* Ensure it sticks to the bottom */
 }
+
 .nav__logo {
   width: 50px;
   height: 50px;
+  margin-bottom: 1.5rem; /* Added margin for spacing */
 }

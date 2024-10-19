@@ -1,24 +1,30 @@
 .contact.section {
   padding-bottom: 6.25rem;
 }
+
 .contact__container {
+  display: grid; /* Ensure the container uses grid layout */
   grid-template-columns: 4fr 8fr;
   column-gap: 1.875rem;
 }
+
 .contact__title {
   font-size: var(--h3-font-size);
   margin-bottom: 0.5rem;
 }
+
 .contact__form-group {
   display: grid;
-  grid-template-columns: repeat(2.1fr);
+  grid-template-columns: repeat(2, 1fr); /* Adjust to two equal columns */
   column-gap: 1.5rem;
 }
+
 .contact__form-div {
   position: relative;
   margin-bottom: 1.875rem;
   height: 3.75rem;
 }
+
 .contact__form-input {
   position: absolute;
   top: 0;
@@ -34,10 +40,40 @@
   padding: 0.635rem 1.875rem;
   z-index: 1;
 }
+
 .contact__form-area {
   height: 10.25rem;
 }
 
-.contact__form-are textarea {
+.contact__form-area textarea {
   resize: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .contact__container {
+    grid-template-columns: 1fr; /* Stack columns on medium screens */
+  }
+
+  .contact__form-group {
+    grid-template-columns: 1fr; /* Stack form groups vertically */
+  }
+
+  .contact__form-area {
+    height: auto; /* Allow text area to adjust height */
+  }
+
+  .contact__title {
+    font-size: var(--h2-font-size); /* Adjust title size */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__form-div {
+    height: auto; /* Allow inputs to adjust height */
+  }
+
+  .contact__form-area textarea {
+    height: auto; /* Allow textarea to adjust height */
+  }
 }

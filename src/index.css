@@ -1,5 +1,6 @@
 /* ========== Google Fonts ========== */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
 /* ========== Variables CSS ========== */
 :root {
   --first-color: hsl(353, 100%, 65%);
@@ -20,18 +21,48 @@
   --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
   --border-radius: 20px;
 }
+
 /* Responsive Typography */
-@media screen and(max-width:1024px) {
+@media screen and (max-width: 1024px) {
   :root {
     --h1-font-size: 1.75rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: 0.93rem;
     --small-font-size: 0.813rem;
-    --smaller-font-size: 0.75;
+    --smaller-font-size: 0.75rem; /* Added unit */
   }
 }
-/* ========== Base========== */
+
+@media screen and (max-width: 768px) {
+  :root {
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.125rem;
+    --h3-font-size: 0.9rem;
+    --normal-font-size: 0.875rem;
+    --small-font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  :root {
+    --h1-font-size: 1.25rem;
+    --h2-font-size: 1rem;
+    --h3-font-size: 0.85rem;
+    --normal-font-size: 0.8rem;
+    --small-font-size: 0.7rem;
+  }
+
+  .btn {
+    padding: 0.5rem 1.5rem; /* Reduced padding on buttons */
+  }
+
+  .section__title {
+    margin-left: 0.5rem; /* Adjusted margin for smaller screens */
+  }
+}
+
+/* ========== Base ========== */
 * {
   margin: 0;
   padding: 0;
@@ -50,7 +81,7 @@ textarea {
 body {
   background-color: var(--body-color);
   line-height: 1.7;
-  color: --text;
+  color: var(--text-color); /* Fixed typo */
 }
 h1,
 h2,
@@ -75,6 +106,7 @@ img {
   height: auto;
   vertical-align: middle;
 }
+
 /* ========== Reusable CSS classes ========== */
 .container {
   max-width: 1080px;
@@ -84,6 +116,11 @@ img {
 }
 .grid {
   display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive grid */
+  gap: 1rem; /* Add gap between grid items */
 }
 .section {
   padding-top: 7rem;
@@ -109,7 +146,7 @@ img {
   padding: 0.75rem 2rem;
   line-height: 1;
   border-radius: 1.875rem;
-  box-shadow: 0 0 1px rgb (0 0 0 / 0%);
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
   border: 1px solid transparent;
   color: #fff;
   display: inline-block;

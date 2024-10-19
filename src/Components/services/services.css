@@ -2,16 +2,29 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 1.875rem;
-
   row-gap: 1.875rem;
+}
+
+/* Added media query for responsive design */
+@media screen and (max-width: 1024px) {
+  .services__container {
+    grid-template-columns: repeat(2, 1fr); /* Stack items on smaller screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__container {
+    grid-template-columns: 1fr; /* Stack all items on extra small screens */
+  }
 }
 
 .services__card {
   text-align: center;
-  padding-inline: 1.875rem;
+  padding: 1.875rem; /* Use shorthand for padding */
   border-radius: var(--border-radius);
-  background-color: var(--container--);
+  background-color: var(--container-color); /* Fixed variable name */
   transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.1); /* Default shadow */
 }
 
 .services__card:hover {
@@ -20,22 +33,22 @@
 
 .services__card:nth-child(1) {
   background-color: rgb(108, 108, 229);
-  box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5); /* Adjusted syntax for rgba */
+  box-shadow: 0px 5px 20px 0px rgba(108, 108, 229, 0.5);
 }
 
 .services__card:nth-child(2) {
   background-color: rgb(249, 215, 76);
-  box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.5); /* Adjusted syntax for rgba */
+  box-shadow: 0px 5px 20px 0px rgba(249, 215, 76, 0.5);
 }
 
 .services__card:nth-child(3) {
   background-color: rgb(249, 123, 139);
-  box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5); /* Adjusted syntax for rgba */
+  box-shadow: 0px 5px 20px 0px rgba(249, 123, 139, 0.5);
 }
 
 .services__card:nth-child(4) {
-  background-color: rgb(76, 189, 250); /* Add your desired color */
-  box-shadow: 0px 5px 20px 0px rgba(76, 189, 250, 0.5); /* Add your desired shadow */
+  background-color: rgb(76, 189, 250);
+  box-shadow: 0px 5px 20px 0px rgba(76, 189, 250, 0.5);
 }
 
 .services__img {
@@ -45,7 +58,7 @@
 .services__title {
   font-size: var(--h3-font-size);
   margin-bottom: 1rem;
-  color: "#fff";
+  color: #fff; /* Fixed color syntax */
 }
 
 .services__description {
